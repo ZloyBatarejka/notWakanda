@@ -1,0 +1,833 @@
+.menu .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.header, .dropdowns__row, .dropdowns__selector, .tours__row, .request__row, .request__check, .feed__check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.menu .menu_wrapper, .menu__block, .menu__info, .dropdowns, .dropdowns .dropdown, .tours, .feed__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.menu .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.header, .dropdowns__row, .dropdowns__selector, .tours__row, .request__row, .request__check, .feed__check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.menu .menu_wrapper, .menu__block, .menu__info, .dropdowns, .dropdowns .dropdown, .tours, .feed__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 70px;
+  background: #ffd241;
+  padding: 23px;
+}
+
+.header__burger {
+  position: relative;
+  cursor: pointer;
+  height: 27px;
+  width: 30px;
+}
+
+.header__burger::before, .header__burger::after,
+.header__burger span {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 30px;
+  height: 5px;
+  background: black;
+}
+
+.header__burger::before {
+  top: 9px;
+}
+
+.header__burger::after {
+  top: 18px;
+}
+
+.menu {
+  opacity: 0;
+  z-index: -1;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.menu .overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.menu .menu_wrapper {
+  height: 100%;
+  margin: 0 150px;
+  padding-bottom: 50px;
+}
+
+.menu__block {
+  position: absolute;
+  right: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: #ffd241;
+}
+
+.menu__nav {
+  text-align: center;
+  margin-top: 48px;
+}
+
+.menu__list {
+  list-style: none;
+}
+
+.menu__item {
+  font-size: 20px;
+  font-family: "MuseoBold";
+  color: #141414;
+  margin: 16px 0;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.menu__item:hover {
+  opacity: 0.5;
+}
+
+.menu__info {
+  margin-top: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu__phone {
+  font-size: 24px;
+  font-family: "MuseoBold";
+  margin-bottom: 24px;
+}
+
+.menu__get {
+  font-size: 15px;
+  font-family: "Museo";
+  padding: 15px 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid black;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.menu__get:hover {
+  border-color: #cb0037;
+}
+
+.menu__close {
+  display: block;
+  text-align: right;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 10px;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+.menu.menu_active {
+  opacity: 1;
+  z-index: 15;
+}
+
+.dropdowns {
+  position: relative;
+}
+
+.dropdowns .dropdown {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px;
+  background: white;
+  border: none;
+  border-radius: 15px;
+  margin-bottom: 18px;
+  font-family: "Museo";
+  overflow: auto;
+}
+
+.dropdowns .dropdown.active {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 340px;
+  width: 100%;
+}
+
+.dropdowns .dropdown.active .dropdowns__selector {
+  margin-bottom: 5px;
+}
+
+.dropdowns__row {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.dropdowns__country {
+  width: 48%;
+}
+
+.dropdowns__date {
+  padding: 15px;
+  background: white;
+  border: none;
+  border-radius: 15px;
+  margin-bottom: 18px;
+  font-family: "Museo";
+  width: 48%;
+}
+
+.dropdowns__date input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-family: "Museo";
+}
+
+.dropdowns__date input::-webkit-input-placeholder {
+  font-family: "Museo";
+  font-size: 16px;
+  color: black;
+}
+
+.dropdowns__date input:-ms-input-placeholder {
+  font-family: "Museo";
+  font-size: 16px;
+  color: black;
+}
+
+.dropdowns__date input::-ms-input-placeholder {
+  font-family: "Museo";
+  font-size: 16px;
+  color: black;
+}
+
+.dropdowns__date input::placeholder {
+  font-family: "Museo";
+  font-size: 16px;
+  color: black;
+}
+
+.dropdowns__type {
+  width: 100%;
+}
+
+.dropdowns__drops {
+  height: 100%;
+}
+
+.dropdowns__drops .drop-one {
+  font-family: "MuseoBold";
+  margin: 10px 10px;
+  cursor: pointer;
+}
+
+.dropdowns__drops .drop-two {
+  font-family: "Museo";
+  margin: 5px 18px;
+  cursor: pointer;
+}
+
+.dropdowns__arrow {
+  cursor: pointer;
+}
+
+.dropdowns__selector {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.litepicker .day-item {
+  font-family: "Museo";
+}
+
+.litepicker .day-item:hover {
+  color: white !important;
+  -webkit-box-shadow: 0 0 0 1px #ffd241 !important;
+          box-shadow: 0 0 0 1px #ffd241 !important;
+}
+
+.litepicker .is-start-date {
+  background-color: #ffd241 !important;
+}
+
+.litepicker .is-end-date {
+  background-color: #ffd241 !important;
+}
+
+.litepicker .is-in-range {
+  background-color: rgba(255, 210, 65, 0.6) !important;
+}
+
+.litepicker .button-next-month:hover {
+  color: #ffd241 !important;
+}
+
+@media screen and (max-width: 768px) {
+  .menu__block {
+    width: 100%;
+  }
+  .menu__block .menu_wrapper {
+    margin: 0 50px;
+  }
+  .menu__phone {
+    display: none;
+  }
+  .menu__nav {
+    margin-top: 0px;
+  }
+  .menu__item {
+    margin: 11px 0;
+  }
+  .dropdowns__row {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .dropdowns__date {
+    width: 100%;
+  }
+  .dropdowns__country {
+    width: 100%;
+  }
+}
+
+.menu .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.header, .dropdowns__row, .dropdowns__selector, .tours__row, .request__row, .request__check, .feed__check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.menu .menu_wrapper, .menu__block, .menu__info, .dropdowns, .dropdowns .dropdown, .tours, .feed__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapper {
+  margin: 0 8.5%;
+  margin-bottom: 170px;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    margin: 0 3%;
+    margin-bottom: 108px;
+  }
+}
+
+.menu .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.header, .dropdowns__row, .dropdowns__selector, .tours__row, .request__row, .request__check, .feed__check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.menu .menu_wrapper, .menu__block, .menu__info, .dropdowns, .dropdowns .dropdown, .tours, .feed__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.title {
+  margin: 29px 0;
+  text-align: center;
+}
+
+.title__name {
+  padding: 17px;
+  font-size: 36px;
+  font-family: "MuseoBold";
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    border-bottom: 2px solid #c4c4c4;
+  }
+}
+
+.menu .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.header, .dropdowns__row, .dropdowns__selector, .tours__row, .request__row, .request__check, .feed__check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.menu .menu_wrapper, .menu__block, .menu__info, .dropdowns, .dropdowns .dropdown, .tours, .feed__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.tours {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tours__item {
+  width: 49%;
+  margin-bottom: 50px;
+}
+
+.tours__row {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tours__figure {
+  position: relative;
+}
+
+.tours__figure figcaption {
+  position: absolute;
+  bottom: 4px;
+  left: 0px;
+  text-align: center;
+  padding: 14px 26px;
+  background: #ffd241;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  font-family: "MuseoBold";
+}
+
+.tours__img {
+  max-height: 100%;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.tours__country {
+  font-size: 21px;
+  font-family: "Museo";
+  text-transform: uppercase;
+  margin: 10px 0 7px 0;
+  color: #c5b223;
+}
+
+.tours__name {
+  font-family: "MuseoBold";
+  font-size: 32px;
+  margin: 17px 0 20px 0;
+}
+
+.tours__route {
+  color: #8c8c8c;
+  font-family: "Museo";
+  font-size: 19px;
+  max-width: 80%;
+  line-height: 23px;
+  margin: 20px 0 15px 0;
+}
+
+.tours__info {
+  font-size: 21px;
+  font-family: "MuseoBold";
+  line-height: 27px;
+  margin-bottom: 15px;
+}
+
+.tours__language {
+  padding-left: 15px;
+}
+
+.tours__attention {
+  padding: 5px 18px 5px 12px;
+  background: #cb0037;
+  border: 0px solid;
+  font-size: 19px;
+  color: #fff;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .tours {
+    border-bottom: 2px solid #c4c4c4;
+  }
+  .tours__row {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .tours__item {
+    width: 98%;
+    margin-top: 34px;
+  }
+  .tours__route {
+    max-width: 95%;
+  }
+}
+
+.menu .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.header, .dropdowns__row, .dropdowns__selector, .tours__row, .request__row, .request__check, .feed__check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.menu .menu_wrapper, .menu__block, .menu__info, .dropdowns, .dropdowns .dropdown, .tours, .feed__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.request__title {
+  font-size: 36px;
+  font-family: "MuseoBold";
+  text-align: center;
+  margin: 25px 0 70px 0;
+}
+
+.request .name {
+  font-size: 14px;
+  padding-bottom: 5px;
+  border-bottom: 3px solid black;
+  text-transform: uppercase;
+  font-family: "Museo";
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: inline-block;
+}
+
+.request__row {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.request__capture {
+  font-size: 15px;
+  font-family: "MuseoBold";
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.request__required {
+  color: #cb0037;
+  margin-right: 5px;
+}
+
+.request .form {
+  width: 48%;
+  position: relative;
+}
+
+.request .form input {
+  width: 100%;
+  padding: 20px 0 20px 30px;
+  border: 1px solid #e7e7e7;
+  border-radius: 3px;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.request .form input.warning {
+  border: 1px solid #cb0037;
+}
+
+.request__warning {
+  position: absolute;
+  left: 0px;
+  bottom: -20px;
+  color: #cb0037;
+  font-size: 15px;
+  font-family: "Museo";
+}
+
+.request__check {
+  position: relative;
+}
+
+.request__check label {
+  margin-left: 17px;
+  font-size: 13px;
+  font-family: "MuseoBold";
+}
+
+.request__agree {
+  margin-bottom: 40px;
+}
+
+.request__checkbox {
+  position: absolute;
+  opacity: 0;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+.request__fake {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #ffd241;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #c4c4c4;
+  border-radius: 2px;
+}
+
+.request__fake.warning {
+  border-color: #cb0037;
+}
+
+.request__under {
+  margin-left: 32px;
+  margin-top: 11px;
+  color: #c1c1c1;
+  font-size: 12px;
+  font-family: "Museo";
+}
+
+.request__note {
+  margin-left: 32px;
+  margin-top: 33px;
+  color: #c1c1c1;
+  font-size: 12px;
+  font-family: "Museo";
+}
+
+.request__send {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30%;
+  padding: 15px 20px;
+  background-color: #ffd241;
+  font-size: 15px;
+  font-family: "MuseoBold";
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.feed {
+  width: 48%;
+  margin-bottom: 40px;
+}
+
+.feed__check {
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.feed__item {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.feed__item label {
+  margin-bottom: 7px;
+  font-size: 13px;
+  font-family: "MuseoBold";
+  text-transform: uppercase;
+}
+
+.feed__checkbox {
+  position: absolute;
+  top: 21px;
+  opacity: 0.00000001;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.feed__fake {
+  display: block;
+  height: 40px;
+  width: 40px;
+  border: 1px solid #c4c4c4;
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffd241;
+}
+
+@media screen and (max-width: 768px) {
+  .request__name {
+    display: inline-block !important;
+  }
+  .request__row {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .request .form {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .request .feed {
+    width: 100%;
+  }
+  .request__send {
+    width: 80%;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*# sourceMappingURL=styles.css.map */

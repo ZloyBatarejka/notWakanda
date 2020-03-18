@@ -1,0 +1,10 @@
+import "./menu.js";
+import "./validate";
+import "./check";
+import "./dropdowns";
+import "../css/styles.css";
+import "../css/fonts.css";
+import one from "../img/1.jpeg";
+import two from "../img/2.jpeg";
+import three from "../img/3.jpeg";
+import four from "../img/4.jpeg";

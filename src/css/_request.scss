@@ -1,0 +1,178 @@
+@import "./variables";
+.request {
+  &__title {
+    font-size: 36px;
+    font-family: "MuseoBold";
+    text-align: center;
+    margin: 25px 0 70px 0;
+  }
+  .name {
+    font-size: 14px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid black;
+    text-transform: uppercase;
+    font-family: "Museo";
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: inline-block;
+  }
+  &__row {
+    @extend %flex-row;
+    justify-content: space-between;
+  }
+  &__capture {
+    font-size: 15px;
+    font-family: "MuseoBold";
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  &__required {
+    color: $second_main;
+    margin-right: 5px;
+  }
+  .form {
+    width: 48%;
+    position: relative;
+    input {
+      width: 100%;
+      padding: 20px 0 20px 30px;
+      border: 1px solid #e7e7e7;
+      border-radius: 3px;
+      font-size: 14px;
+      margin-bottom: 5px;
+      &.warning {
+        border: 1px solid $second_main;
+      }
+    }
+  }
+  &__warning {
+    position: absolute;
+    left: 0px;
+    bottom: -20px;
+    color: $second_main;
+    font-size: 15px;
+    font-family: "Museo";
+  }
+  &__check {
+    @extend %flex-row;
+    position: relative;
+    label {
+      margin-left: 17px;
+      font-size: 13px;
+      font-family: "MuseoBold";
+    }
+  }
+  &__agree {
+    margin-bottom: 40px;
+  }
+  &__checkbox {
+    position: absolute;
+    opacity: 0;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+  }
+  &__fake {
+    display: flex;
+    color: $main;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    border: 1px solid $border;
+    border-radius: 2px;
+    &.warning {
+      border-color: $second_main;
+    }
+  }
+
+  &__under {
+    margin-left: 32px;
+    margin-top: 11px;
+    color: #c1c1c1;
+    font-size: 12px;
+    font-family: "Museo";
+  }
+  &__note {
+    margin-left: 32px;
+    margin-top: 33px;
+
+    color: #c1c1c1;
+    font-size: 12px;
+    font-family: "Museo";
+  }
+  &__send {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    padding: 15px 20px;
+    background-color: $main;
+    font-size: 15px;
+    font-family: "MuseoBold";
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+}
+.feed {
+  width: 48%;
+  margin-bottom: 40px;
+  &__check {
+    @extend %flex-row;
+    width: 100%;
+    justify-content: space-around;
+  }
+  &__item {
+    @extend %flex-col;
+    align-items: center;
+    position: relative;
+    label {
+      margin-bottom: 7px;
+      font-size: 13px;
+      font-family: "MuseoBold";
+      text-transform: uppercase;
+    }
+  }
+  &__checkbox {
+    position: absolute;
+    top: 21px;
+    opacity: 0.00000001;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+  }
+
+  &__fake {
+    display: block;
+    height: 40px;
+    width: 40px;
+    border: 1px solid $border;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $main;
+  }
+}
+@media screen and (max-width: $breakPoint) {
+  .request {
+    &__name {
+      display: inline-block !important;
+    }
+    &__row {
+      flex-direction: column !important;
+    }
+    .form {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .feed {
+      width: 100%;
+    }
+    &__send {
+      width: 80%;
+    }
+  }
+}

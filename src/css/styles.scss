@@ -1,0 +1,11 @@
+@import "./variables";
+@import "./menu";
+@import "./wrapper";
+@import "./title";
+@import "./tours";
+@import "./request";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

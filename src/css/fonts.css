@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "Museo";
+  src: url("../fonts/MuseoSansCyrl.otf") format("truetype");
+}
+@font-face {
+  font-family: "MuseoBold";
+  src: url("../fonts/MuseoSansCyrl_3.otf") format("truetype");
+}

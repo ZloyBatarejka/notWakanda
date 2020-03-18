@@ -1,0 +1,16 @@
+@import "./variables";
+.title {
+  margin: 29px 0;
+  text-align: center;
+  &__name {
+    padding: 17px;
+    font-size: 36px;
+    font-family: "MuseoBold";
+    text-transform: uppercase;
+  }
+}
+@media screen and(max-width: $breakPoint) {
+  .title {
+    border-bottom: 2px solid $border;
+  }
+}

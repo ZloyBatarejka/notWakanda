@@ -1,0 +1,26 @@
+$yellow: #ffd241;
+$red: #cb0037;
+$gold: #c5b223;
+$grey: #8c8c8c;
+$main: $yellow;
+$second_main: $red;
+$third_main: $gold;
+$fourth_main: $grey;
+$breakPoint: 768px;
+$border: #c4c4c4;
+$under: #c1c1c1;
+%absoulte {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+%flex-row {
+  display: flex;
+  flex-direction: row;
+}
+%flex-col {
+  display: flex;
+  flex-direction: column;
+}

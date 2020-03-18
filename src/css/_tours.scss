@@ -1,0 +1,85 @@
+@import "./variables";
+.tours {
+  @extend %flex-col;
+  justify-content: space-between;
+  &__item {
+    width: 49%;
+    margin-bottom: 50px;
+  }
+  &__row {
+    @extend %flex-row;
+    justify-content: space-between;
+  }
+  &__figure {
+    position: relative;
+    figcaption {
+      position: absolute;
+      bottom: 4px;
+      left: 0px;
+      text-align: center;
+      padding: 14px 26px;
+      background: $main;
+      text-align: center;
+      font-size: 22px;
+      font-weight: bold;
+      font-family: "MuseoBold";
+    }
+  }
+  &__img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+  }
+  &__country {
+    font-size: 21px;
+    font-family: "Museo";
+    text-transform: uppercase;
+    margin: 10px 0 7px 0;
+    color: $third_main;
+  }
+  &__name {
+    font-family: "MuseoBold";
+    font-size: 32px;
+    margin: 17px 0 20px 0;
+  }
+  &__route {
+    color: $fourth_main;
+    font-family: "Museo";
+    font-size: 19px;
+    max-width: 80%;
+    line-height: 23px;
+    margin: 20px 0 15px 0;
+  }
+  &__info {
+    font-size: 21px;
+    font-family: "MuseoBold";
+    line-height: 27px;
+    margin-bottom: 15px;
+  }
+  &__language {
+    padding-left: 15px;
+  }
+  &__attention {
+    padding: 5px 18px 5px 12px;
+    background: $second_main;
+    border: 0px solid;
+    font-size: 19px;
+    color: #fff;
+    border-radius: 8px;
+  }
+}
+@media screen and (max-width: $breakPoint) {
+  .tours {
+    &__row {
+      flex-direction: column !important;
+    }
+    &__item {
+      width: 98%;
+      margin-top: 34px;
+    }
+    &__route {
+      max-width: 95%;
+    }
+    border-bottom: 2px solid $border;
+  }
+}
