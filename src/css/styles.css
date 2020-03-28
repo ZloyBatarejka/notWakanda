@@ -63,7 +63,7 @@
           align-items: center;
   width: 100%;
   height: 70px;
-  background: #ffd241;
+  background: #33964e;
   padding: 23px;
 }
 
@@ -115,7 +115,7 @@
   right: 0;
   width: 50%;
   height: 100%;
-  background: #ffd241;
+  background: #33964e;
 }
 
 .menu__nav {
@@ -312,16 +312,16 @@
 
 .litepicker .day-item:hover {
   color: white !important;
-  -webkit-box-shadow: 0 0 0 1px #ffd241 !important;
-          box-shadow: 0 0 0 1px #ffd241 !important;
+  -webkit-box-shadow: 0 0 0 1px #33964e !important;
+          box-shadow: 0 0 0 1px #33964e !important;
 }
 
 .litepicker .is-start-date {
-  background-color: #ffd241 !important;
+  background-color: #33964e !important;
 }
 
 .litepicker .is-end-date {
-  background-color: #ffd241 !important;
+  background-color: #33964e !important;
 }
 
 .litepicker .is-in-range {
@@ -329,7 +329,7 @@
 }
 
 .litepicker .button-next-month:hover {
-  color: #ffd241 !important;
+  color: #33964e !important;
 }
 
 @media screen and (max-width: 768px) {
@@ -503,7 +503,7 @@
   left: 0px;
   text-align: center;
   padding: 14px 26px;
-  background: #ffd241;
+  background: #33964e;
   text-align: center;
   font-size: 22px;
   font-weight: bold;
@@ -522,7 +522,7 @@
   font-family: "Museo";
   text-transform: uppercase;
   margin: 10px 0 7px 0;
-  color: #c5b223;
+  color: #236635;
 }
 
 .tours__name {
@@ -696,7 +696,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #ffd241;
+  color: #33964e;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -741,7 +741,7 @@
           align-items: center;
   width: 30%;
   padding: 15px 20px;
-  background-color: #ffd241;
+  background-color: #33964e;
   font-size: 15px;
   font-family: "MuseoBold";
   border: none;
@@ -799,7 +799,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #ffd241;
+  color: #33964e;
 }
 
 @media screen and (max-width: 768px) {
